@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
-public class A7 {
+public class A8 {
+    static int n ; //這類別的屬性, 裡面的所有函數都可以看到他
      public static void main(String[] args) {
-        //int n ;
-        //n = input();
-        rank(input()); // 只剩一行
+        input();
+        rank(); 
     }
 
-    public static int input(){
+    public static void input(){
          Scanner sc = new Scanner(System.in);
-        int n , count = 0;
+        int  count = 0;
         do {
             if(count > 0)System.out.println("輸入錯誤");
 
@@ -20,10 +20,10 @@ public class A7 {
        }while(!((n >= 0 ) && (n <= 100)));     
        
        System.out.printf("n=%d\n",n);
-       return n;
+      
     }
 
-    public static void rank(int n){
+    public static void rank(){
         // 參數傳遞rank(int n)
          if(n>=80 && n<=100){
             System.out.println("A,你簡直天才");
