@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class B1 {
+    /**
+     * 輸入一個非負整數 n，用迴圈試除 2 到 n/2，判斷並印出 n 是不是質數。
+     */
     public static void main(String[] args) {
         int n  ;
         boolean OK = true;

@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class A5 {
+    /**
+     * 主程式：呼叫 input() 取得分數，再依分數判斷並印出成績等第。
+     */
     public static void main(String[] args) {
         int n ;
         n = input();
@@ -24,6 +27,10 @@ public class A5 {
        
     }
 
+    /**
+     * 讀入一個 0~100 的整數；超出範圍會顯示「輸入錯誤」並要求重新輸入。
+     * 印出輸入的數字後，回傳該數值。
+     */
     public static int input(){
          Scanner sc = new Scanner(System.in);
         int n , count = 0;

@@ -1,12 +1,19 @@
 import java.util.Scanner;
 
 public class A7 {
+     /**
+      * 主程式：直接把 input() 的回傳值當作 rank() 的參數，一行完成輸入與判斷等第。
+      */
      public static void main(String[] args) {
         //int n ;
         //n = input();
         rank(input()); // 只剩一行
     }
 
+    /**
+     * 讀入一個 0~100 的整數；超出範圍會顯示「輸入錯誤」並要求重新輸入。
+     * 印出輸入的數字後，回傳該數值。
+     */
     public static int input(){
          Scanner sc = new Scanner(System.in);
         int n , count = 0;
@@ -23,6 +30,10 @@ public class A7 {
        return n;
     }
 
+    /**
+     * 依傳入的分數 n 印出成績等第：
+     * 80~100 為 A、70~79 為 B、60~69 為 C，其餘為 D。
+     */
     public static void rank(int n){
         // 參數傳遞rank(int n)
          if(n>=80 && n<=100){

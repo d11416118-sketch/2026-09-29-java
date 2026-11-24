@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class A4 {
+    /**
+     * 用 do-while 讀入 0~100 的分數，再依分數判斷並印出成績等第 A/B/C/D。
+     */
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int n , count = 0;
